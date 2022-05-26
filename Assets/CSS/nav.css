@@ -1,0 +1,243 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+header #header{
+    width: 100%;
+
+}
+
+
+/* BARRE DE NAVIGATION */
+
+/* Navigation */
+
+header nav #navigation{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+header nav #navigation ul{
+    width: 100%;
+    height: 50px;
+    /* background-color: rgba(0, 0, 0, .5); */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav #navigation ul li{
+    display: inline;
+    padding: 20px;
+}
+
+header nav #navigation ul li a{
+    color: black;
+    text-decoration: none;
+
+}
+
+header nav #navigation ul li a:hover{
+    opacity: .5;
+
+}
+
+/* /Navigation */
+
+/* /BARRE DE NAVIGATION */
+
+
+
+/* ---------------------------------------- */
+
+
+
+/* BARRE DE NAVIGATION Mobile */
+
+
+header #header #buttonNavContainer{
+    width: 100%;
+    height: 100px;    
+    display: flex;
+    align-items: center;
+    justify-content:end;
+}
+
+header #header #buttonNavContainer #bottleButtonNav{
+    width: 70%;
+    height: 100px;    
+    float: left;
+}
+
+@keyframes buttonBackAnimation{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header #header #buttonNavContainer #buttonNav{
+    width: 30%;
+    /* height: 100px; */
+    float: left;
+    display: none;
+    align-items: center;
+    justify-content:center;
+    /* animation: buttonBackAnimation 2s ; main.js */
+
+}
+
+
+header #header #buttonNavContainer #buttonNavMenuBack{
+    width: 30%;
+    height: 100px;
+    float: left;
+    display: none;
+    align-items: center;
+    justify-content:center;
+    animation: buttonBackAnimation 4s ;
+}
+
+header #header #buttonNavContainer #buttonNav button{
+    width: 30px;
+    height: 50px;
+}
+
+header #header #buttonNavContainer #buttonNav button i{
+    font-size: 30px;
+}
+
+header #header #buttonNavContainer #buttonNavMenuBack button i{
+    font-size: 30px;
+}
+
+@keyframes navigationMobileTransition{
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header #header #navigationContainerMobile{
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    animation: navigationMobileTransition 4s ;
+}
+
+
+
+header #header #navigationContainerMobile #navigationMobile{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+
+}
+
+header #header #navigationContainerMobile #navigationMobile div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #header #navigationContainerMobile #navigationMobile #navigationMobileDiv1{
+    background-color: blue; 
+}
+
+header #header #navigationContainerMobile #navigationMobile #navigationMobileDiv2{
+    background-color: yellow; 
+}
+
+header #header #navigationContainerMobile #navigationMobile #navigationMobileDiv3{
+    background-color: red; 
+}
+
+header #header #navigationContainerMobile #navigationMobile #navigationMobileDiv4{
+    background-color: grey; 
+}
+
+
+
+header #header #navigationContainerMobile #navigationMobile div a{
+    color: black;
+    text-decoration: none; 
+}
+
+
+
+
+/* /BARRE DE NAVIGATION Mobile */
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+
+
+header #header{
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+header #header #navigationContainer{
+    display: none;
+}
+
+header #header #buttonNavContainer #buttonNav{
+    display: flex;
+}
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+
+header #header #buttonNavContainer{
+    display: none;
+}
+
+header #header #navigationContainerMobile{
+    display: none;
+}
+
+header #header #navigationMobile{
+    display: none;
+}
+
+}
+
+ /* /MEDIA QUERIES */
+
+/* /HEADER */
+
+
+
